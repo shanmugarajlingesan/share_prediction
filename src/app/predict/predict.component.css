@@ -1,0 +1,67 @@
+.card-ani:hover{
+
+    box-shadow: 6px 7px 32px 1px rgba(166,166,166,1);
+    border-radius: 5%;
+    border-bottom:5px solid orange;
+    color: orange;
+    
+    
+}
+.card{
+    border:none;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 10s steps(40, end) infinite,
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    0%{width: 0 }
+    25%{width: 50% }
+    50%{width:  100%}
+    75%{width: 0%}
+    100%{width: 0% }
+ 
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(23, 27, 248, 0.74); }
+}
+
+
+.typewriter1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing1 10s steps(40, end) infinite,
+      blink-caret1 1s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing1 {
+      0%{width: 0 }
+      25%{width: 0% }
+      50%{width:  50%}
+      75%{width: 100%}
+      100%{width: 0% }
+   
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret1 {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(7, 199, 7, 0.76); }
+  }

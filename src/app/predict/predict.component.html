@@ -1,0 +1,64 @@
+<div class="container-fluid" >
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+  <div class="card text-center">
+   
+    
+    <div class="pt-2">
+        <div class="row pt-2">
+            <div class="col-lg-12">
+          
+              <div class="text-center display-4 pt-2 pb-2">
+                Predict
+                <p class="lead pt-1">Prediction give you appropriate result of stocks.</p>
+              </div>
+            </div>
+          </div>
+    </div>    
+    </div>
+  </div>
+  <div class="col-4"></div>
+  </div>
+<div class=" row">
+  
+    <div class="col-3" ></div>
+    <div class="col-3 card-ani " >
+      <div class="" (click)="Linear('Linear')" >
+        <div class="jumbotron bg-white text-center ">
+        <p class="h2 font-weight-light">Linear Regression</p>
+        <p class="h6 font-weight-light typewriter1">Linear Graph show result.</p>
+      </div>
+    </div>
+      
+    </div>
+    <div class="col-3 card-ani" (click)="Linear('Sentiment')">
+      <div class="text-center jumbotron bg-white">
+        <p class="h2 font-weight-light">Sentimental Analysis</p>
+        <p class="h6 font-weight-light typewriter">Real time Analysis is done.</p>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  
+</div>
+
+<div class="container pt-4" *ngIf="toggle">
+  <div class="text-center" style="height:100px;">
+    <div class="row">
+      <div class="col-6 text-right">
+        <i class="pr-4">Mode:{{type}}</i>  <p-dropdown [options]="stocksArray"  (onChange)="onChange($event)" focus [(ngModel)]="stock" optionLabel="name" placeholder="Select a stock"  [style]="{'width':'30%','text-align':'center','border-radius':'3%' }"></p-dropdown>
+      </div>
+      <div class="col-6 ">
+          <button class="btn btn-outline-danger float-left" (click)="reset()"> Reset</button> 
+      </div>
+    </div>
+    
+    
+  </div>
+  
+</div>
+<div class="container pt-5" *ngIf="showGraph">
+    <app-graph></app-graph>
+</div>
+
+</div>

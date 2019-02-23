@@ -1,0 +1,30 @@
+<div class="card-body border border-white">
+    <div class="row pt-2">
+        <div class="col-lg-12">
+      
+          <div class="text-center card-title display-4 pt-2 pb-2">
+           Stock 
+            <p class="lead pt-1">Prediction give you appropriate result of stocks.</p>
+          </div>
+        </div>
+      </div>
+</div>  
+<div class="container">
+  <p-accordion>
+    <p-accordionTab *ngFor="let i of StockDetail" header={{i.name}} >
+      <div class="container p-4 card-ani ">
+           <ul class="list-group">
+             <li class="list-group-item"> {{i.item1}} </li>
+             <li class="list-group-item"> {{i.item2}} </li>
+             <li class="list-group-item"> {{i.item3}} </li>
+             <li class="list-group-item"> {{i.item4}} </li>
+             <li class="list-group-item"> {{i.item5}} </li>
+           </ul>
+           
+      </div>
+      
+    </p-accordionTab>
+   
+  </p-accordion>  
+</div>
+
